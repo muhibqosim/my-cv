@@ -60,7 +60,7 @@
              margin: 5px 5% 5px 5%; 
                 } 
   .grid{ display: grid;
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(2, 1fr)
        }
             .card-title p{ font-size: 1.5rem;
             }
