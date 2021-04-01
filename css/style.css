@@ -1,6 +1,6 @@
 *{
   margin:0;
-  paddin 0;
+  padding: 0;
 }
 
 .log{
@@ -16,17 +16,41 @@ h1{
   justify-content: center;
   
 } */
+.card{
+  max-width: 80%;
+}
+
+.btn-nav{
+  width: 100%;
+}
+
+.post-card{
+  border: 1px #ddd solid;
+  max-width: 100%;
+  margin: 5px;
+  
+}
 .img-parent{
   height: 25%;
   border: 2px solid lightblue;
  border-radius: 50%;
 }
+
 .img{
   width: 80%;
   /*height: 300px;*/
   border: 2px solid #eee;
   border-radius: 2% ;
 }
+
+.post-img{
+  width: 50%;
+  /*height: 300px;*/
+  border: 2px solid #eee;
+  border-radius: 50% ;
+}
+
+
 .basic-profile{
   text-decoration: none
 }
@@ -124,3 +148,42 @@ h2{
                 {
                   
                 }
+                
+                
+                
+/*border:: begin*/
+.rtl-sm{
+     border-top-left-radius: 0.5rem;
+}
+.rtl-lg{ 
+     border-top-left-radius: 1.5rem;
+}
+
+.rtr-sm{
+     border-top-right-radius: 0.5rem;
+}
+.rtr-lg{ 
+     border-top-right-radius: 1.5rem;
+}
+
+.rbl-sm{
+  border-bottom-left-radius: 0.5rem;
+}
+.rbl-lg{ 
+   border-bottom-left-radius: 1.5rem;
+}
+
+.rbr-sm{
+  border-bottom-right-radius: 0.5rem;
+}
+.rbr-lg{ 
+ border-bottom-right-radius: 1.5rem;
+}
+
+.r-sm{
+     border-radius: 0.5rem;
+}
+.r-lg{ 
+     border-radius: 1.5rem;
+}
+/*border:: end*/
