@@ -44,10 +44,17 @@ h1{
 }
 
 .post-img{
-  width: 50%;
+  width: 70%;
   /*height: 300px;*/
   border: 2px solid #eee;
   border-radius: 50% ;
+}
+.post-img2{
+  width: 90%;
+  /*height: 300px;*/
+  border: 2px solid #eee;
+  border-radius: 2px;
+  height: 80%;
 }
 
 
