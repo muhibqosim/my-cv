@@ -17,7 +17,7 @@ h1{
   
 } */
 .card{
-  max-width: 80%;
+  width: 90%;
 }
 
 .btn-nav{
@@ -57,6 +57,9 @@ h1{
   height: 80%;
 }
 
+.btn-major{
+  width: 95%;
+}
 
 .basic-profile{
   text-decoration: none
@@ -86,15 +89,15 @@ a{
 @media (max-width: 300px) 
 {
   .card-img {
-              max-width: 100%;
+              
             } 
   .grid { display: grid;
           grid-template-columns: 1fr;
             }
   .card-title p{ 
-               font-size: 0.7rem;
+               font-size: ;
                   }
-  .card-link{ font-size: 0.7rem;
+  .card-link{ font-size: ;
                 }
   footer{
           font-size: 0.7rem;
@@ -135,14 +138,14 @@ h2{
 @media (min-width: 768px)
 {
   .card-img{
-             max-width: 100%
+             
                 } 
   .grid{ display: grid;
         grid-template-columns: repeat(3, 1fr)
        }
-            .card-title p{ font-size: 1.5rem;
+            .card-title p{ 
             }
-          .card-link{ font-size: 1.2rem;
+          .card-link{ font-size: 
           }
           footer{
                   font-size: 1.5rem;
