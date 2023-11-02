@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initinitial-scale">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" ">
+  <meta name="keywords" content=" ">
+  <meta name="author" content=" ">
+  <!-- fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- AOS link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- css link-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--Web fonts-->
+  <!-- fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+
+  <title>AIP | Publications</title>
+  <style>
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+      .header-lg {
+        background-image: url('img/child-adoption.jpg');
+        height: 60vh;
+          
+      }
+
+      .portfolios {
+        height: 35vh;
+      }
+    }
+
+    @media (min-width:700px) {
+      .header-lg {
+        background-image: url('img/child-adoption.jpg');
+        height: 60vh;
+      }
+
+      .portfolios {
+        height: 20vh;
+      }
+    }
+
+ 
+  </style>
+</head>
+<!-- body starts here--> 
+<body> 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="fYIThrBZ"></script>
+
+
+ <main class="navbar bg-red-500 ">
+  <header class="header Navy-blue  md:py-5">
+    <!-- Navigation menu -->
+    <nav class=" ">
+      <div class="mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex">
+            <a href="index.html" class="flex items-center ">
+               <img src="img/logo.png" alt="logo" class="logo  "> 
+            <!--  <span class="text-white text-lg md:text-5xl  garamond mx-1 font-bold" style="font-weight: 600;">Al-Qosim Islamic Center</span>-->
+            </a>
+          </div>
+          <!-- desktop menu bar-->
+          <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:w-full lg:pl-48 space-x-1 md:text-3xl">
+            <a href="index1.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900   hover:bg-gray-300">Home</a>
+            <a href="#about" class="py-4 px-2 text-white font-semibold hover:text-gray-900">About</a>
+            <a href="publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>
+            <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
+            <a href="library.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Library</a>
+            <a href="#contact" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button type="button"
+              class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              aria-label="toggle menu" onclick="toggleMenu()">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu bar -->
+      <div class="hidden md:hidden justify-between  bg-blue-800  " id="mobile-menu">
+        <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+        <a href="#about" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900"> About </a>
+        <a href="publications.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Publications</a>
+        <!--<a href="portfolio.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Portfolio</a>-->
+        <a href="library.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Library</a>
+        <a href="#contact" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
+      </div>
+    </nav>
+  </header>
+  </main>
+  <!-- profile imagae-->
+  
+  <main> 
+  <section class="header-lg relative  bg-cover bg-center w-full h-75  ">
+<div class="header-bg opacity-70  h-full bg-cover py-10  md:pt-96 px-2.5 h-75">
+    <div class="text-white  text-center">
+      <h1 class="text-3xl  md:text-6xl uppercase" > The Illegality or Otherwise of Adoption Practices in the Princint of Islamic Law </h1>
+      <h1 class="text-lg my-2 md:my-10 md:text-6xl" > By: </h1>
+      <h1 class="text-xl md:text-6xl" > Muhibudeen Qosim A. </h1>
+      <div class="flex items-center my-5 justify-center ">
+      <img src="img/decorations.png" class="md:h-8 "/>
+    </div>
+      <p class="text-sm mt-3 md:mt-9 md:text-4xl  font-bold text-center" >
+        <a class="www.alqosim.sgm.ng">Home </a> / 
+        <a class="publications.html">Publications </a> / 
+        <a class="#about"> About </a> 
+      </p>
+      
+    </div>
+
+    <!--<div class=" w-90">
+      <img src="img/rosul.png"  class="h-48 max-w-75"/>
+    </div>-->
+    </div>
+  </section>
+  
+  </main>
+  
+  <!-- Publications -->
+ <main class="pt-10 px-2.5 md:px-5 text-sm">
+   <!--blog image-->
+    <!--<div class="w-100 ">
+      <img src="img/history1.jpg" class="w-full "/>
+    </div>-->
+    
+<!-- publication content--> 
+ <div class="pt-8 pb-16  tracking-tight text-justify leading-5 md:leading-10 md:text-3xl">
+ <h2 class="font-bold text-lg md:text-5xl"> INTRODUCTION</h2>
+   <p class="mt-2.5  ">Protection of lineage is so fundamental in Islamic law otherwise known as “the Sharii`ah”. Hence, it forms an integral part of the five core objectives of Islamic law, vis-à-vis: protection of life; protection of property; protection of intellect; protection of religion, and protection of lineage. These five core objectives are what the divine Islamic code seeks to regulate through its various working principles and mechanisms. In addendum, the objectives of Islamic law cut across the personal affairs of Islamic faith adherents as well as, their public affairs. </p>
+   <p class=" mt-2.5 ">Family formation is not left untouched and thus, adequately regulated by the Islamic Sharii`ah code. In the light of this, this paper seeks to address the position of adoption under the Islamic law; whether or not Islamic law recognizes the existence and the legality of adoption practices. If yes, what are the Islamic guidelines? And if otherwise, is there any alternative provided or available under the tenet of Islamic law..</p>
+   <h2 class="font-bold text-lg mt-3 md:text-5xl">2.0 UNDERSTANDING THE CONCEPT OF ADOPTION </h2>
+   <p class="mt-2.5  ">The practice of adoption has been in existence even before the emergence of Islamic law. Hence, adoption practice is not a new concept nor is it a novel practice. Adoption, under Islamic law, is termed “at-tabannii”. Literally, adoption is from the word ‘adopt' meaning 'to choose or take as one's own'.  While going by its technical meaning, there is no much difference between the literal meaning and the technical meaning. Various Islamic jurists and scholars have expressed their thought on the technical meaning of at-tabannii (adoption). </p>
+   <p class="mt-2.5  ">According to At-Tobari, adoption is when a man ascribes to himself someone’s else child [as his child] where in fact the ascribed child is not his [biological] child.  It is defined also as the ascribing of children to their non-biological parents.  Similarly, Black law dictionary defines adoption as: “The creation of a parent–child relationship by judicial order between two parties who usually are unrelated. The relation of parent and child created by law between persons who are not in fact parent and child”.  Summarily, adoption is, therefore, the practice where a person attributes to himself a child that is not his own biological child. And it is brought about only after a determination that the child is an orphan or has been abandoned, or that the parents' parental rights have been terminated by court order.</p>
+   <p class="mt-2.5  ">From the foregoing, it is evident and crystal clear that adoption is a legal instrument which facilitates the transfer of ownership of an adopted child to the adoptive parent. It gives the adoptive parent the exclusive right over the adoptee (i.e. the adopted child). In other words, adoption practice renders the initial and original parents incapacitated to lay claim to their biological child once the child has been adopted by another parents known as “adoptive parent” or “adoptive family”.</p>
+   <h2 class="font-bold text-lg mt-3 md:text-5xl">3.0 PROHIBITION OF ADOPTION IN ISLAMIC LAW</h2>
+   <p class="mt-2.5  ">It is trite in Islamic law that family lineage must be regarded, protected and safeguarded against any form of mix up. Hence, the prohibition of adultery, fornication and other illicit sexual acts.  The principle of hifzun-nasab (protection of lineage) is very regulatory in this sense. Thus, the practice of at-tabannii (adoption) is annulled and proscribed as it conflicts the objectives of Islamic law – the protection of lineage in particular [which at times also extend to cover protection of human dignity].</p>
+   <p class="mt-2.5  ">It has been established that adoption is a legal instrument which deprives the generic parent of a child to lay claim to their biological child given in adoption to another person or family. By implication, an effort by the former (i.e. the biological parents) to lay such a claim, after which the adoption processes have been finalized, will result in futility. </p>
+   <p class="mt-2.5  ">Moreover, adoption practices ascribe the legal ownership of the adopted child to the adoptive parents. Hence, the adoptive family has the sole and exclusive right to effect change of name (the surname in particular) of the adopted child. In fact, the adopted child automatically bears the name of the adoptive parent. It thus, transforms an adoptee the biological child of the adoptive parent. In the same vein, the child is seeing as an integral member of the adoptive family and as such, the adopted child enjoys the same legal rights and benefits as other blood relations of the adoptive family in issue of inheritance etc. Also, the adopted child can not marry any of the adoptive family members.</p>
+   <p class="mt-2.5  ">Based on the above effect and consequences, Islamic law illegalized and abolished the practice of at-tabannii (adoption) on the grounds that:</p>
+   <p class="mt-2.5  ">a.	It divests the biological parents the right to lay claim to such a child given in adoption to someone else.</p>
+   <p class="mt-2.5  ">b.	It legally transfers the ownership of an adopted child to the adoptive parent or adoptive family as the case may be. </p>
+   <p class="mt-2.5  ">c.	It effects the change of name including the surname of the adopted child. </p>
+   <p class="mt-2.5  ">d.	It equates the adopted child with the natural members of the adoptive family. Thus, they have and enjoy same legal right in regards to inheritance.</p>
+   <p class="mt-2.5  ">e.	Similarly, it prohibits valid marriage contract between the adopted child and any [lawful] member of the adoptive family.</p>
+   <p class="mt-2.5  ">Thus, upon the above listed considerations, adoption practice is hereby prohibited under Islamic law. Evidence in support of its prohibition are so numerous. However, some of the evidence are provided below: </p>
+   <p class="mt-1 font-semibold  "><i class="">...And He has not made your adopted sons your [true] sons. That is [merely] your saying by your mouths, but Allah says the truth, and He guides to the [right] way. <br> Call them by [the names of] their fathers; it is more just in the sight of Allah… </i>  </p>
+   <p class="mt-2.5 ">There are also, varieties of prophetic traditions which further declare the prohibition of adoption in support of the above Quranic verses. Al-Bukhari and Muslim reported:</p>
+   <p class="mt-1 font-semibold  "><i class="">A person who attributes his fatherhood to anyone other than his real father, knowing that he is not his father, commits an act of disbelief… </i>  </p>
+   <p class="mt-2.5  ">Although, the prophetic tradition cited above does not directly address the issue of adoption, however, the interpretation and implication extends to nullify adoption practices.</p>
+ <h2 class="font-bold mt-3 text-lg md:text-5xl">4.0 ALTERNATIVE TO ADOPTION PRACTICES UNDER ISLAMIC LAW</h2>
+   <p class="mt-2.5  ">It is imperative to note that, nothing is left proscribed under the Islamic law except substituting alternative(s) is/are proffered. Therefore, while adoption practice (at-tabannii) remains illegal and prohibited in the purview of Islamic law, there is an alternative of “al-kafaalah”. Sharii`ah law enjoins al-Kafaalah and outlawed at-tabannii (adoption practice). </p>
+   <p class="mt-2.5  ">Al-kafaalah literally means “sponsorship” or “guardianship”. It is the act of showing goodness to a minor, an orphan or an abandoned child through the provision of proper parental care, guidance and educational sponsorship till that particular child attain legal age. It does not involve the legal transfer of the ownership of the child to the person offering to take the child for al-kafaalah (sponsorship or guardianship). Thus, the child taken into al-kafaalah is regarded as “makfuul” meaning “the ward”, and while the sponsor person or family is termed “kaafil”.</p>
+   <p class="mt-2.5  ">Al-kafaalah is the promise to undertake, without payment, the upkeep, education and protection of a minor, in the same way as a father would do for his son.  It is also the primarily a gift of care and not a substitute for lineal descent. </p>
+   <p class="mt-2.5  ">One of the factors which distinguishes at-tabannii (adoption) from al-kafaalah (guardianship) is that the latter tries to achieve a balance between raising the child as one’s own child while ensuring the adopted child’s identity (i.e. lineage) is not absorbed into the identity of the sponsor family. In other words, al-kafaalah does not establish a legal parent-child relationship between the kaafil (the guardian) and the makfuul (the ward), and it does not halt the legal relationship between the legitimate parents and the child. This implies that, the legal implications of at-tabannii (adoption) is not so in the case of al-kafaalah. There is nothing like change of name of the ward, transfer of child ownership, entitlement to inherit the sponsor or guardian except by way of bequest or gift, and prohibition of marriage between the makfuul (the ward) and any lawful family relation of the sponsor or guardian [in so far there is no issue of fostering relationship].</p>
+   <p class="mt-2.5  ">So therefore, al-kafaalah (guardianship) serves as alternative means to adoption practices. It is so much recommended, and indeed, it is so rewardable. Two prophetic traditions respectively reported by al-Bukhari and Muslim are so instructive here:</p>
+   <p class="mt-1 font-semibold "> <i class="">The one who raises an orphan and I are like these [two] in Paradise (and he pointed to his middle and index fingers). <br> An orphan's guardian, whether he is a relative or non-relative, and I are like these two in Paradise. </i>   </p>
+ <h2 class="font-bold mt-3 text-lg md:text-5xl">CONCLUSION</h2>
+   <p class="mt-2.5  ">Islamic law regulates the ownership and custodianship of children. It also firmly upholds right to human dignity. Hence, any act or practice which purports to encroach on human dignity is condemned and where practicable, better alternative(s) is/are provided to mitigate the situation. It also cherishes undiluted family lineage. Thus, adoption practice (at-tabannii), which absorbs a person into another family, is declared void and unrecognized for its inconsistency with the objectives of the Sharii`ah. Hence, the substitute practice of al-kafaalah (guardianship or sponsorship) is proffered to replace the practice of adoption (at-tabannii). </p>
+   <p class="mt-2.5  ">Although, both practices facilitate the transfer of child custodianship from the generic parents to another parents or family. However, while adoption (at-tabannii) terminates the recognition and the right of the generic parents except where there exists an exceptional agreement  between the natural parents and the adoptive parents, al-kafaalah (guardianship) practice does not. It only facilitates the responsibility of sponsoring a child without changing lineage or enjoying same legal status as the natural members of the adoptive family in issue of inheritance or prohibiting lawful marriage contract between the ward (makfuul) and any relation of the kaafil (the guardian or sponsor).</p>
+   
+   
+   <!--<p class="mt-2.5 md:mt-5  text-center"> Click <a href="" class="text-red-600 "> here </a> to have  </p> -->
+    
+  </main>
+  
+  <!--share icon-->
+ <!-- <div class="px-2.5">
+    <hr class="mb-2" />
+    <p class="text-sm md:text-xl"> Share this: </p>
+    <hr class="mt-2" />
+  </div>-->
+    <hr class="mt-2" />
+  
+  <!-- comments on the pist starts here--> 
+ <main class="pt-6 px-2.5 mb-0">
+  <!-- <hr class=""> -->
+   <div class="mx-auto px-4 mt-10" >
+     <h1 class="text-xl md:text-4xl text-center font-bold uppercase">Leave a Comment</h1>
+     <div class="mx-20 md:mx-80 h-1 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg text-center" > </div>
+   <p class="mt-5 md:text-3xl text-center"> Type your comment in the box below.</p>
+ </div> 
+ <!--facebook comment--> 
+<div class="fb-comments w-full " data-href="https://alqosim.sgm.ng/child-adoption.html" data-width="80vw"   data-lazy="false"   data-numposts="5"></div>
+ 
+ </main>
+  
+  <!--contact Segment --> 
+  <main class="" >
+   <section class="relative rounded-lg py-8 px-4 md:px-16 md:py-16 bg-gray-100 text-dark  mx-4 md:mx-28 bottom-sinker mt-0"  >
+     <!--about us-->
+    <div id="about" class="">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-5" > About Us </h1>
+      <p class="text-xs text-justify text-gray-800 md:text-2xl " > Alqosim Islamic Center is an academic, educational and da‘wah website. It aims to offer well-researched Islamic contents on various aspects of Islām —sīrah, fiqh, tawhīd, qur-ān, inclusive of basic Arabic principles— based on evidence from religious texts in a concise and easy-to-digest manner. We also offer platform for virtual Qur-anic recitation gathering. We also engage in sale and delivery of Arabic and Islamic texts accross the nation, Nigeria. </p>
+ <!-- social handles--> 
+    <div class="mt-5  md:mt-12 flex   text-xl  md:text-5xl ">
+      <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-blue-600 mr-4 hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+      <a href="https://wa.me/2349037074761?text=Hello!" class="text-green-600 hover:text-green-500 mr-4" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i></a>
+        <a href="instagram.com/muhibqosim" class="text-red-600 mr-4 hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+     </div>
+    </div>
+    <!--contact--> 
+    <div class="mt-12">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-5" > Contact Info </h1>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-envelope text-blue-500 pr-2"> </i><a class="" href="al-qosimislamiccenter@gmail.com"> al-qosimislamiccenter@gmail.com </a> </p>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-map-marker-alt text-blue-500 pr-2"> </i> Faculty of Law, Bayero University, Kano, Nigeria.  </p>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-phone text-blue-500 pr-2"> </i> (+234) 9037074761  </p>
+    </div>
+    
+    <!--Quick reach out--> 
+    <div id="contact" class="mt-12">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-4" > Quick Contact</h1>
+      <div class="">
+        <form class="py-2.5" id="messageForm">
+          <div class="flex items-center justify-center">
+            <textarea class="text-sm p-2 inline-block text-dark rounded-sm" name="message" id="messageInput"
+              placeholder="your message here " style="height:20vh; width: 90vw; ">  </textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="text-center items-center mt-5 px-4 py-4 Navy-blue text-sm md:text-3xl text-white font-bold shadow-lg inline-block mt-5 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 rounded-sm"
+              type="submit" style="width: 90vw; ">Submit Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </section>
+    </main>
+  
+  
+  
+  
+  <!--foooter starts here--> 
+  <footer class="Navy-blue pt-96 pb-3 text-white px-4">
+    <div class="md:pt-72">
+      <h1 class="text-2xl md:text-5xl text-center font-semibold mt-20">Join our e-mail list for regular updates, news & publications  </h1>
+    </div>
+    <form action="  " method="  " class=" mt-3 px-4 md:px-20 ">
+       <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+    </form>
+
+
+
+    <!-- copyright--> 
+    <div class="mt-10 md:mt-20 pt-5 ">
+      <hr class="text-gray-100  ">
+     <!-- <p class="text-xs text-white font-light text-center md:text-3xl">  </p>-->
+      <p class="text-xs text-white mt-6 font-light text-center md:text-3xl"> All Rights Reserved for <a href="https://alqosim.sgm.ng"class="font-semibold  text-red-600">Al-qosim Islamic Center</a> <i class="far fa-copyright md:text-3xl "> </i> 2023 <br> Designed by <a class=" text-red-600 font-semibold" href="https://muhibqosim.github.io/muhibqosim/"> MuhibQosim </a>
+      </p>
+    </div>
+
+</footer>
+
+ 
+
+<!-- JavaScript starts here-->
+  <script src="js/main.js"> </script>
+<!--  <script src="js/jquery.slim.min.js" type="text/javascript" charset="utf-8"></script>-->
+<!-- <script src="js/bootstrap.js">
+  </script>-->
+</body>
+</html>

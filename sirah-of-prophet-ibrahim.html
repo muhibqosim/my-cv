@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initinitial-scale">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" ">
+  <meta name="keywords" content=" ">
+  <meta name="author" content=" ">
+  <!-- fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- AOS link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- css link-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--Web fonts-->
+  <!-- fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+
+  <title>AIP | Publications</title>
+  <style>
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+      .header-lg {
+        background-image: url('img/ibrahim.jpeg');
+        height: 60vh;
+          
+      }
+
+      .portfolios {
+        height: 35vh;
+      }
+    }
+
+    @media (min-width:700px) {
+      .header-lg {
+        background-image: url('img/ibrahim.jpeg');
+        height: 60vh;
+      }
+
+      .portfolios {
+        height: 20vh;
+      }
+    }
+
+
+  </style>
+</head>
+<!-- body starts here--> 
+<body> 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="fYIThrBZ"></script>
+
+<main class="navbar bg-red-500 ">
+  <header class="header Navy-blue  md:py-5">
+    <!-- Navigation menu -->
+    <nav class=" ">
+      <div class="mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex">
+            <a href="index.html" class="flex items-center ">
+               <img src="img/logo.png" alt="logo" class="logo  "> 
+            <!--  <span class="text-white text-lg md:text-5xl  garamond mx-1 font-bold" style="font-weight: 600;">Al-Qosim Islamic Center</span>-->
+            </a>
+          </div>
+          <!-- desktop menu bar-->
+          <div class="hidden garamond md:flex items-center md:justify-center mx-auto lg:w-full lg:pl-48 space-x-1 md:text-3xl">
+            <a href="index1.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900   hover:bg-gray-300">Home</a>
+            <a href="#about" class="py-4 px-2 text-white font-semibold hover:text-gray-900">About</a>
+            <a href="publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>
+            <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
+            <a href="library.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Library</a>
+            <a href="#contact" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button type="button"
+              class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              aria-label="toggle menu" onclick="toggleMenu()">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu bar -->
+      <div class="hidden md:hidden justify-between  bg-blue-800  " id="mobile-menu">
+        <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+        <a href="#about" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900"> About </a>
+        <a href="publications.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Publications</a>
+        <!--<a href="portfolio.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Portfolio</a>-->
+        <a href="library.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Library</a>
+        <a href="#contact" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
+      </div>
+    </nav>
+  </header>
+  </main>
+
+  <main> 
+  <section class="header-lg relative  bg-cover bg-center w-full h-75  ">
+<div class="header-bg opacity-70  h-full bg-cover py-16  md:pt-96 px-2.5 h-75">
+    <div class="text-white  text-center">
+      <h1 class="text-3xl md:text-6xl uppercase line-height" > Prophet Ibrahim (A.S) A-Z Summary Highlight  </h1>
+      <h1 class="text-lg my-5 md:my-10 md:text-6xl" > By: </h1>
+      <h1 class="text-xl md:text-4xl" > Muhibudeen Qosim A. </h1>
+      <div class="flex items-center my-5 justify-center ">
+      <img src="img/decorations.png" class=" "/>
+    </div>
+      <p class="text-sm mt-3 md:text-6xl  font-bold text-center" >
+        <a class="alqosim.sgm.ng">Home </a> / 
+        <a class="pub.html">Publications </a> / 
+        <a class="#contact"> About </a> 
+      </p>
+      
+    </div>
+
+    <!--<div class=" w-90">
+      <img src="img/rosul.png"  class="h-48 max-w-75"/>
+    </div>-->
+    </div>
+  </section>
+  
+  </main>
+  
+  <!-- Publications -->
+ <main class="pt-10 px-2.5 md:px-5 text-sm">
+   <!--blog image-->
+    <!--<div class="w-100 ">
+      <img src="img/history1.jpg" class="w-full "/>
+    </div>-->
+    
+<!-- publication content--> 
+ <div class="pt-8 pb-16  tracking-tight text-justify leading-6 md:leading-10 md:text-3xl">
+   <!--<h2 class="font-bold text-lg md:text-5xl">  Introduction</h2>-->
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">PROPHET IBRAHIM (A.S) was given birth to by Aazar (his father as confirmed in Q6 vs 74) and Amiilah (his mother). His first wife was Saarroh, while his second wife was Haajara. </p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">The people of Ibrahim, except him and his wife, used to worship things like heavenly bodies (stars, moon, and sun), idols, and some great heroes during their time by making their sculptures. However, by Allaah's grace, Prophet Ibrahim was guided by Allah right from his childhood.</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">The first person Prophet Ibrahim preached to not to engage in the worship of anything else besides Allaah was his father. He (A.S) warned his father with respect not to worship things that could neither help nor harm him. He made his father know that he (Ibrahim) has been given special guidance from the only Noble Lord. But, unfortunately, his father never heeded his preaching.</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">Part of Allaah's guidance on Prophet Ibrahim was that there was this one night when he meditated on the uniqueness and genuineness of what his people used to worship besides the only Lord. He contemplated the nature of the stars, moon, and sun that his people used to worship and discovered that these objects were nothing more than deception and false gods. 
+   Allaah says in the Qur-aan: “And thus did We show Abraham the realm of the heavens and the earth that he would be among the certain [in faith]...” — Al-An'am 6: 75 — 83</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">There was a great day when Prophet Ibrahim did something very amazing. On the day of his people's annual festival, usually held on the outskirts of the city, he went to the temple his people designated for their idols and used an axe to break the idols, leaving the axe hung around the biggest of them untampered. The rationale behind what Prophet Ibrahim did was to challenge his people intellectually. However, they could not see any light in the challenge. All that they did was to blame themselves for not having someone who was supposed to have stayed behind to watch their idols till they returned from their outskirt shrine. </p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">Thereafter, they ordered his arrest and then threw him in a blazing fire. But, Allaah instructed the set ablaze fire to be a safe place for Ibrahim by saying "kuunii bardan wasalaaman `alaa Ibrahim" (translated as:... Be a coolness and safety to Ibrahim).</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">Another very amazing event was the logical dialogue between him and Namruudh, who claimed to be God. After several debates, Prophet Ibrahim thereafter challenged Namruudh to command the sun to appear from where it was supposed to set, but he was unable to do that.</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">Prophet Ibrahim's second wife, Haajara, gave birth to Ismaa`iil (Ishmail), who was the first child of Prophet Ibrahim (A.S). He was born when Prophet Ibrahim was 86 years old. Some years later, about 13 years, his first wife, Saarroh, also gave birth to Is-haaq (Isac), the second child.</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">However, one of the greatest tests was Allaah's instruction to the prophet Ibrahim to sacrifice his first son, Ismaa`iil. Prophet Ibrahim never made any promises, as some people used to say (to read more, you can check As-soof-faat vs. 98–113, Q37). With strong faith in Allaah despite that he gave birth to the child he was instructed to sacrifice at his old age of 86 years, he swiftly informed his child, Ismaa`iil and Haajara, his second wife and mother of Ismaa`iil about the divine commandment.</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">With strong faith, none of them (both the Mother and the child) ever say a negative word. They rather submitted and subjected themselves to the will of the Most High. As Prophet Ibrahim and his family (Isma`il and his mother, Haajara) moved towards the outskirts of Makkah, and after laying down Isma`il (covering his face) in order to do as instructed, Angel Jibriil appeared to him with a "white sound-looking ram" from Jannah.</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">In short, Allaah substituted the sacrifice of Isma`il with the "white sound and good-looking ram". Hence, how we all do during the Ileya festival (`iidul-ad-haa; festival of sacrifice).</p>
+   <p class="mt-2.5 md:mt-5 md:leading-16 ">Similarly, after the event, Allah directed Prophet Ibrahim and Isma`il, the first sons, to construct the site now known as al-Ka`bah. The true narration is that, there had not been any erection or foundation before the instruction came. The location is centred on the baytul-ma`muur (the frequented house) in the heavens where the angels used to worship Allaah. There is a prophetic tradition that says the house like al-ka`bah in heaven used to have one thousand different angels worshipping there daily. Allaahu akbar. Hence, the annual visit to Ka`bah in Makkah.</p>
+   
+    
+   <!--<p class="mt-2.5 md:mt-5  text-center"> Click <a href="" class="text-red-600 "> here </a> to have  </p> -->
+    
+  </main>
+  
+  <!--share icon-->
+ <!-- <div class="px-2.5">
+    <hr class="mb-2" />
+    <p class="text-sm md:text-xl"> Share this: </p>
+    <hr class="mt-2" />
+  </div>-->
+    <hr class="mt-2" />
+  
+  <!-- comments on the pist starts here--> 
+ <main class="pt-6 px-2.5 mb-0">
+  <!-- <hr class=""> -->
+   <div class="mx-auto px-4 mt-10" >
+     <h1 class="text-xl md:text-4xl text-center font-bold uppercase">Leave a Comment</h1>
+     <div class="mx-20 md:mx-80 h-1 Navy-blue text-lg font-bold bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg text-center" > </div>
+   <p class="mt-5 md:text-3xl text-center"> Type your comment in the box below.</p>
+ </div> 
+ <!--facebook comment--> 
+<div class="fb-comments w-full " data-href="https://alqosim.sgm.ng/sirah-of-prophet-ibrahim.html" data-width="80vw"   data-lazy="false"   data-numposts="5"></div>
+ 
+ </main>
+  
+  
+
+  <!--contact Segment --> 
+  <main class="" >
+   <section class="relative rounded-lg py-8 px-4 md:px-16 md:py-16 bg-gray-100 text-dark  mx-4 md:mx-28 bottom-sinker mt-0"  >
+     <!--about us-->
+    <div id="about" class="">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-5" > About Us </h1>
+      <p class="text-xs text-justify text-gray-800 md:text-2xl " > Alqosim Islamic Center is an academic, educational and da‘wah website. It aims to offer well-researched Islamic contents on various aspects of Islām —sīrah, fiqh, tawhīd, qur-ān, inclusive of basic Arabic principles— based on evidence from religious texts in a concise and easy-to-digest manner. We also offer platform for virtual Qur-anic recitation gathering. We also engage in sale and delivery of Arabic and Islamic texts accross the nation, Nigeria. </p>
+ <!-- social handles--> 
+    <div class="mt-5  md:mt-12 flex   text-xl  md:text-5xl ">
+      <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-blue-600 mr-4 hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+      <a href="https://wa.me/2349037074761?text=Hello!" class="text-green-600 hover:text-green-500 mr-4" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i></a>
+        <a href="instagram.com/muhibqosim" class="text-red-600 mr-4 hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+     </div>
+    </div>
+    <!--contact--> 
+    <div class="mt-12">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-5" > Contact Info </h1>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-envelope text-blue-500 pr-2"> </i><a class="" href="al-qosimislamiccenter@gmail.com"> al-qosimislamiccenter@gmail.com </a> </p>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-map-marker-alt text-blue-500 pr-2"> </i> Faculty of Law, Bayero University, Kano, Nigeria.  </p>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-phone text-blue-500 pr-2"> </i> (+234) 9037074761  </p>
+    </div>
+    
+    <!--Quick reach out--> 
+    <div id="contact" class="mt-12">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-4" > Quick Contact</h1>
+      <div class="">
+        <form class="py-2.5" id="messageForm">
+          <div class="flex items-center justify-center">
+            <textarea class="text-sm p-2 inline-block text-dark rounded-sm" name="message" id="messageInput"
+              placeholder="your message here " style="height:20vh; width: 90vw; ">  </textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="text-center items-center mt-5 px-4 py-4 Navy-blue text-sm md:text-3xl text-white font-bold shadow-lg inline-block mt-5 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 rounded-sm"
+              type="submit" style="width: 90vw; ">Submit Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </section>
+    </main>
+  
+  
+  
+  
+  <!--foooter starts here--> 
+  <footer class="Navy-blue pt-96 pb-3 text-white px-4">
+    <div class="md:pt-72">
+      <h1 class="text-2xl md:text-5xl text-center font-semibold mt-20">Join our e-mail list for regular updates, news & publications  </h1>
+    </div>
+    <form action="  " method="  " class=" mt-3 px-4 md:px-20 ">
+       <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+    </form>
+
+
+
+    <!-- copyright--> 
+    <div class="mt-10 md:mt-20 pt-5 ">
+      <hr class="text-gray-100  ">
+     <!-- <p class="text-xs text-white font-light text-center md:text-3xl">  </p>-->
+      <p class="text-xs text-white mt-6 font-light text-center md:text-3xl"> All Rights Reserved for <a href="https://alqosim.sgm.ng"class="font-semibold  text-red-600">Al-qosim Islamic Center</a> <i class="far fa-copyright md:text-3xl "> </i> 2023 <br> Designed by <a class=" text-red-600 font-semibold" href="https://muhibqosim.github.io/muhibqosim/"> MuhibQosim </a>
+      </p>
+    </div>
+
+</footer>
+
+<!-- JavaScript starts here-->
+  <script src="js/main.js"> </script>
+<!--  <script src="js/jquery.slim.min.js" type="text/javascript" charset="utf-8"></script>-->
+<!-- <script src="js/bootstrap.js">
+  </script>-->
+</body>
+</html>
