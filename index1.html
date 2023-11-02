@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initinitial-scale">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content=" ">
+  <meta name="keywords" content=" ">
+  <meta name="Al-qosim Islamic Center" content=" ">
+  <!-- fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind link-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- AOS link-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- css link-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--Web fonts-->
+  <!-- fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+
+  <title>AIC | Home Page</title>
+  <style>
+    /* Background image for homepage: mobile and desktop*/
+    @media (max-width:699px) {
+      .header-lg {
+        background-image: url('img/main.jpg');
+        height: 60vh;
+          
+      }
+
+    }
+
+    @media (min-width:700px) {
+      .header-lg {
+        background-image: url('img/main.jpg');
+        height: 60vh;
+      } 
+   
+      
+    }
+
+  </style>
+</head>
+<!-- body starts here--> 
+<body> 
+ <main class="navbar Navy-blue ">
+  <header class="header Navy-blue  md:py-5">
+    <!-- Navigation menu -->
+<nav class=" ">
+      <div class="mx-auto px-4">
+        <div class="flex justify-between">
+          <div class=" ">
+            <a href="index.html" class=" ">
+               <img src="img/logo.png" alt="logo" class="logo w-24 md:w-52"> 
+            <!--  <span class="text-white text-lg md:text-5xl  garamond mx-1 font-bold" style="font-weight: 600;">Al-Qosim Islamic Center</span>-->
+            </a>
+          </div>
+          <!-- desktop menu bar-->
+          <div class="hidden garamond md:flex items-center md:justify-center mx-auto md:pl-6 lg:w-full lg:pl-48 space-x-1 md:text-3xl">
+            <a href="index1.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900   hover:bg-gray-400 border-b-4 border-red-600">Home</a>
+            <a href="#about" class="py-4 px-2 text-white font-semibold hover:text-gray-900">About</a>
+            <a href="publications.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Publications</a>
+            <!--<a href="portfolio.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Portfolio</a>-->
+            <a href="library.html" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Library</a>
+            <a href="#contact" class="py-4 px-2 text-white font-semibold hover:text-gray-900">Contact</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button type="button"
+              class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white"
+              aria-label="toggle menu" onclick="toggleMenu()">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu bar -->
+      <div class="hidden md:hidden justify-between  bg-blue-800  " id="mobile-menu">
+        <a href="index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-400">Home</a>
+        <a href="#about" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900"> About </a>
+        <a href="publications.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Publications</a>
+        <!--<a href="portfolio.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Portfolio</a>-->
+        <a href="library.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Library</a>
+        <a href="#contact" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Contact</a>
+      </div>
+    </nav>
+  </header>
+  </main>
+  <!-- profile imagae-->
+  
+  <main> 
+  <div class="bg-gray-800 text-white py-1">
+    <marquee class="pt-1.5"> Welcome to Al-Qosim Islamic Center</marquee>
+  </div>
+  <section class="header-lg relative  bg-cover bg-center w-full h-75  ">
+<div class="header-bg opacity-70  h-full bg-cover pt-16 pb-10 md:pt-96 px-2.5 h-75">
+    <div class="text-white  text-center">
+     <!-- <h1 class="text-3xl font-semibold md:text-6xl" >  </h1>-->
+     <div class="flex items-center justify-center">
+       <img src="img/bismillah.png" class="h-14 md:h-32" alt="Bismillah">
+     </div>
+      <h1 class="text-3xl mt-10 md:mt-20 md:px-16 md:text-7xl uppercase line-height" > Center for Islamic Teachings... </h1>
+      
+    </div>
+
+    <!--<div class=" w-90">
+      <img src="img/rosul.png"  class="h-48 max-w-75"/>
+    </div>-->
+    </div>
+  </section>
+  
+  <!-- listen to Qur-aan--> 
+   <div class="relative py-9 px-2.5 md:px-9 md:py-16 bg-gray-100 text-dark text-xl  text-center mx-4 " style="top:-90px ">
+    <div class="font-bold  p-1.5">
+      <p class="text-lg text-center font-semibold md:text-3xl md:tracking-wider" > Start with inspiring nasheed </p>
+      <!--audio track-->
+      <audio id="audio-segment-1" class="md:h-74 md:w-74 bg-white my-4 mx-auto" controls>
+        <source src="audio/audio1.mp3" type="audio/mpeg" class=" "> Your browser does not support the audio element.
+      </audio>
+      <div class="flex items-justify justify-between mt-5 "> 
+      <p class="text-gray-400 text-sm  md:text-3xl "> Title: Imla' qolbi  </p>
+      <p class="text-gray-400 text-sm    md:text-3xl "> Reciter: El-Afasi  </p>
+      
+    </div>
+    </div>
+    </div>
+  
+  
+  </main>
+  
+  <!--about Al-qosim Islamic Publications-->
+ <main class="pb-12 md:pb-24 px-2.5  text-sm" style="">
+    <!--<div class="flex items-center justify-center  ">
+      <img src="img/bismillah.png" class=" w-55 h-14 md:h-24 md:w-80"/>
+    </div>-->
+    <h1 class="text-3xl md:text-6xl text-center font-bold" style="text-shadow: #ffd700 1px 1px;"> Welcome To AIC </h1>
+    <div class="flex items-center justify-center ">
+      <img src="img/decorations.png" class="md:h-8 "/>
+    </div>
+    <div class="mt-6 px-3 md:px-7 md:text-4xl"> 
+    <p class="  leading-9 text-center line-height"> Al-Qosim Islamic Center (AIC) is a community which aims at propagating Islamic messages and teachings. We are committed to bringing resource contents spanning accross various Islamic epistiome —tawhed, fiqh, sirah, qur-aan and basic arabic principles. This, we aim at preserving the Islamic heritage and identity and, promoting a comprehensive Islamic way of life based on the clear provision of the Glorious Qur-aan, the Sunnah of Prophet Muhammad (P.B.U.H.) and the explanations of the Muslim jurists. </p>
+    </div>
+    <!--<div class="mt-5 mx-3">
+    <img src="img/cover_img.png" class="card-img img-fluid p-auto img-parent mt-5 mx-auto " />
+  </div>-->
+  </main>
+  
+  <!--about Al-qosim Islamic Publications-->
+  <main style="background-image: url('img/main.jpg');" class="bg-cover pt-12 pb-20 px-2.5 text-sm">
+    <h1 class="text-3xl md:text-6xl font-bold text-center" style="text-shadow: #ffd700 1px 1px;"> What We offer  </h1>
+    <div class="flex items-center justify-center ">
+      <img src="img/decorations.png" class="md:h-8 "/>
+    </div>
+    <!--islamic publications-->
+    <div class="grid grid-cols-2 md:grid-cols-2 gap-4 pt-10">
+    <div class=" bg-gray-100 rounded-lg">
+    <div class=" mx-auto flex items-center justify-center">
+      <img src="img/history1.jpg" class="rounded-t-lg h-28 w-full md:h-64" />
+    </div>
+      <h3 class=" text-dark font-semibold text-center pt-5 px-1.5 text-xl md:text-4xl ">   Islamic Publications   </h3>
+      <p class=" text-dark font-semibold text-center md:text-2xl pb-3 text-xl">   ---------------   </p>
+      <p class="text-dark tracking-tight px-3 text-sm md:text-2xl text-center pb-4">   We offer a wide range of free Islamic contents ranging from Islamic sirah, Islamic fiqh, tawheed, basic Arabic principles and Qur-an.  </p>
+      <button class="bg-red-500 rounded-b-lg w-full py-2 md:py-4 text-center text-sm md:text-2xl text-white font-semibold"> <a href="publications.html"> View Publications </a></button>
+    </div>
+    <!--what we do 2--> 
+    <div class=" bg-gray-100 rounded-lg">
+    <div class=" mx-auto flex items-center justify-center">
+      <img src="img/gathering.jpg" class="rounded-t-lg h-28 w-full  md:h-64" />
+    </div>
+      <h3 class=" text-dark md:text-4xl font-semibold text-center pt-5 px-7 text-xl"> Hifz Gathering   </h3>
+      <p class=" text-dark md:text-2xl font-semibold text-center pb-3 text-xl">   ---------------   </p>
+      <p class="text-dark tracking-tight px-3 text-sm text-center pb-4 md:text-2xl"> We create platform for those who want to make progress in their hifz and  perfect their memorization. Join our Qur-an Community online for free. </p>
+      <button class="bg-blue-500 rounded-b-lg w-full py-2 md:py-4 text-center text-sm md:text-2xl text-white font-semibold"> <a href="publications.html"> Join Now </a></button>
+    </div>
+    <!--what we do 2--> 
+    <div class="mt-6 bg-gray-100 rounded-lg">
+    <div class=" mx-auto flex items-center justify-center">
+      <img src="img/web.png" class="rounded-t-lg h-28 w-full md:h-64" />
+    </div>
+      <h3 class=" text-dark font-semibold text-center pt-5 px-3 md:text-4xl text-xl"> Website Development  </h3>
+      <p class=" text-dark font-semibold text-center pb-3 text-xl md:text-2xl">   ---------------   </p>
+      <p class="text-dark tracking-tight px-3 text-sm text-center pb-4 md:text-2xl">   We create and design stunning and user-friendly websites for businesses, institutions, organizations and individuals. We prioritise quality in what we deliver. </p>
+      <button class="bg-green-700 rounded-b-lg w-full py-2 md:py-4 text-center text-sm md:text-2xl text-white font-semibold"> <a href="publications.html"> Reach Out </a></button>
+    </div>
+    <!--what we do 2--> 
+    <div class="mt-6 bg-gray-100 rounded-lg">
+    <div class=" mx-auto flex items-center justify-center">
+      <img src="img/texts.jpg" class="rounded-t-lg h-28 w-full   md:h-64" />
+    </div>
+      <h3 class=" text-dark font-semibold text-center pt-5 px-1.5 text-xl md:text-4xl"> Sale of Arabic Texts   </h3>
+      <p class=" text-dark font-semibold text-center pb-3 text-xl md:text-2xl">   ---------------   </p>
+      <p class="text-dark tracking-tight px-3 text-sm text-center pb-4 md:text-2xl"> Are you in need of Arabic and Islamic texts? We deal in the sale, supply and delivery of Arabic literatures and Islamic texts on various subjects  with no restriction.    </p>
+      <button class="Navy-blue rounded-b-lg w-full py-2 md:py-4 text-center text-sm md:text-2xl text-white font-semibold"> <a href="publications.html"> Order Now </a></button>
+    </div>
+    
+    </div>
+    </main>
+    
+    
+    
+  
+    
+    
+    <!--hadiith of the day--> 
+    <main class=" bg-cover " style="background-image: url('img/islamic-quote.jpg'); height: 88vh; ">
+      <div class="header-bg opacity-70  h-full bg-cover pt-3 pb-10 md:pt-10 px-2.5 h-75">
+      <h1 class="text-3xl md:text-6xl font-bold text-white text-center" style="text-shadow: #ffd700 1px 1px;"> Islamic Quotes  </h1>
+      <div class="flex items-center justify-center ">
+      <img src="img/decorations.png" class=" md:h-8 "/> 
+    </div>
+ <!--slider starts here-->
+<div class="slider-container mt-5 md:mt-10">
+  <div class="slider">
+    <!--quote 1-->
+    <div class="slide text-white text-center pt-10 md:pt-20 px-7 md:px-16">
+      <p class="font-semibold text-xl md:text-5xl line-height"> <i class="fas fa-quote-left text-3xl md:text-6xl text-gray-400 "></i> O you who have believed, be persistently standing firm for Allah, witnesses in justice, and do not let the hatred of a people prevent you from being just. Be just; that is nearer to righteousness. And fear Allah; indeed, Allah is Acquainted with what you do. <i class="fas fa-quote-right text-3xl md:text-6xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl md:text-5xl mt-5 md:mt-16 "> — Al-Ma'idah 5:8 </p></div>
+    <!--quote 2-->
+    <div class="slide text-white text-center pt-12 px-7 md:px-16">
+      <p class="font-semibold text-xl md:text-4xl line-height"> <i class="fas fa-quote-left text-3xl md:text-6xl text-gray-400 "></i> Look at those who are lower than you (financially) but do not look at those who are higher than you, lest you belittle the favors Allah conferred upon you. <i class="fas fa-quote-right text-3xl md:text-6xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl md:text-5xl mt-9 md:mt-20 "> — Prophet Muhammad (P.B.U.H)</p></div>
+    <!--quote 3-->
+    <div class="slide text-white text-center pt-12 px-7 md:px-16">
+      <p class="font-semibold text-xl md:text-4xl line-height"> <i class="fas fa-quote-left text-3xl md:text-6xl text-gray-400 "></i> To learn a single topic of knowledge and teach it to a Muslim is more beloved to me than having the whole world and giving it in the cause of Allah.  <i class="fas fa-quote-right text-3xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl md:text-5xl md:mt-20 mt-8 "> — Al-Hasan Al-Basri </p></div>
+    <!--quote 4-->
+    <div class="slide text-white text-center pt-10 md:pt-20 px-7 md:px-16">
+      <p class="font-semibold text-lg md:text-5xl line-height"> <i class="fas fa-quote-left text-3xl md:text-6xl text-gray-400 "></i> It is perseverance (al-sabr) from the things that are forbidden by Allah the Mighty and Majestic and acceptance. He was asked, “What is perseverance and acceptance?” He replied, “al-sabr is to persevere in holding back from what Allah has forbidden, and [acceptance is] acceptance of what Allah the Mighty and Majestic has commanded. <i class="fas fa-quote-right md:text-6xl text-3xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl md:mt-20 mt-5 md:text-5xl "> — Al-Hasan Al-Basri </p></div>
+    <!--quote 5-->
+    <div class="slide text-white text-center pt-12 md:pt-20 px-7 md:px-16">
+      <p class="font-semibold text-xl md:text-4xl line-height"> <i class="fas fa-quote-left text-3xl md:text-6xl text-gray-400 "></i> The dunya distracts and preoccupies the heart and body, but al-zuhd (asceticism, not giving importance to worldly things) gives rest to the heart and body. Verily, Allah will ask us about the halal things we enjoyed, so what about the haram! <i class="fas fa-quote-right text-3xl md:text-6xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl md:text-5xl md:mt-20 mt-8 "> — Al-Hasan Al-Basri </p></div>
+    <!--quote 6-->
+    <div class="slide text-white text-center pt-12 md:pt-20 px-7 md:px-16">
+      <p class="font-semibold text-xl md:text-4xl line-height"> <i class="fas fa-quote-left text-3xlmd:text-6xl text-gray-400 "></i> The life of this world is made up of three days: yesterday has gone with all that was done; tomorrow, you may never reach; but today is for you so do what you should do today. <i class="fas fa-quote-right text-3xl md:text-6xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl md:text-5xl md:mt-20 mt-8 "> — Al-Hasan Al-Basri </p></div>
+    <!--quote 7-->
+    <div class="slide text-white text-center pt-12 md:pt-20 px-7 md:px-16">
+      <p class="font-semibold text-xl md:text-4xl line-height"> <i class="fas fa-quote-left text-3xl md:text-6xl text-gray-400 "></i> By Allah! Hastening to the prayer is not accomplished by the feet. Indeed they were prohibited from coming to prayer without tranquility and dignity. Rather, it is about the hearts, the intention, and the submission. <i class="fas fa-quote-right text-3xl text-6xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl md:text-5xl md:mt-20 mt-8 "> — Al-Hasan Al-Basri </p></div>
+    <!--quote 8-->
+    <div class="slide text-white text-center pt-10 md:pt-20 px-7 md:px-16">
+      <p class="font-semibold text-lg md:text-4xl line-height"> <i class="fas fa-quote-left text-3xl md:text-6xl text-gray-400 "></i> Faith (iman) is not by embellishment or wishful thinking, but it is what settles in the heart and is verified through your works. Whoever says good but does not do good will have his words compared to his deeds by Allah. Whoever says good and does good will have his words raised by his deeds.This is because Allah ‘azza wa jalla said:To Him ascends the good word, and the righteous deed raises it. [Sûrah Fâtir: 10]<i class="fas fa-quote-right text-3xl md:text-6xl text-gray-400"></i> </p>
+<p class="font-semibold text-xl md:text-5xl md:mt-20 mt-8 "> — Al-Hasan Al-Basri </p></div>
+    <!--quote 9-->
+    <div class="slide text-white text-center pt-10 md:pt-20 px-7 md:px-16">
+      <p class="font-semibold text-xl md:text-4xl line-height"> <i class="fas fa-quote-left text-3xl md:text-6xl text-gray-400 "></i> The Faqih (who has knowledge in the religion), is he who is disinterested in this life, eager for the Last Life, has knowledge in the religion, often worships his Lord, refrains from breaching the honor of Muslims and from unjustly acquiring their wealth and sincerely advises them. <i class="fas fa-quote-right text-3xl md:text-6xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl md:text-5xl md:mt-20 mt-8 "> — Al-Hasan Al-Basri </p></div>
+    <!--quote 1-->
+    <!--<div class="slide text-white text-center pt-10 px-7 md:px-16">
+      <p class="font-semibold text-xl md:text-4xl"> <i class="fas fa-quote-left text-3xl text-gray-400 "></i> O you who have believed, be persistently standing firm for Allah, witnesses in justice, and do not let the hatred of a people prevent you from being just. Be just; that is nearer to righteousness. And fear Allah; indeed, Allah is Acquainted with what you do. <i class="fas fa-quote-right text-3xl text-gray-400"></i> </p>
+      <p class="font-semibold text-xl mt-5 "> — Al-Ma'idah 5:8 </p></div>-->
+  </div>
+  <div class="flex items-justify justify-between">
+  <button class="prev btn-slider text-7xl md:text-9xl text-white font-bold" onclick="changeSlide(-1)">&#8249;</button>
+  <button class="next btn-slider  text-7xl md:text-9xl text-white font-bold" onclick="changeSlide(1)">&#8250;</button>
+</div>
+</div>
+</main>
+
+    
+    
+    <!--hmRecebt amRecent Publications--> 
+    <main class="py-12 bg-white px-4">
+      <h1 class="text-3xl font-bold md:text-6xl text-center" style="text-shadow: #ffd700 1px 1px;"> Recent Publications  </h1>
+      <div class="flex items-center justify-center ">
+        <img src="img/decorations.png" class=" md:h-8"/>
+      </div>
+      <p class="text-center text-sm md:text-4xl my-5 md:my-10"> Browse our recent publications, read and share to others </p>
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:grid-span-2">
+     <!-- article one -->
+      <div data-aos=" " class="bg-gray-100 shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/unknown.png" alt="publication caption" class="w-full h-full object-cover object-center  border border-b-0 ">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 text-center pt-10">
+          <h3 class="text-base md:text-2xl font-bold tracking-tight uppercase"> An Excerpt from the Tafsiir of Imaam al-Qurtubiyy: The Five Unknown Aspects</h3> 
+           <p class="text-sm md:text-lg font-semibold my-6 text-gray-600"> <i class="fas fa-calendar"></i> October, 2022 </p>
+         <p class="text-sm mb-8 md:text-2xl tracking-tight "> Al-Imaam Qurtubi (rohimahullaah), in his explanation of the verse in surah al-an`aam (Q chapter 6 v 59) “ وَعِندَهُۥ مَفَاتِحُ ٱلْغَيْبِ لَا يَعْلَمُهَآ إِلَّا هُوَۚ... ” , cited an hadiith reported by al-Bukhoriy. The verse is translated thus: “And with Him are the keys of the unseen; none knows them except Him...</p>
+         <a href="unknown-aspects.html" class=""> <p class="text-sm button py-3 md:text-2xl bg-yellow-500 text-white  mb-5 font-semibold">View Details » </p> </a> 
+        </div>
+    </div> 
+     <!-- article two -->
+      <div data-aos=" " class="bg-gray-100 shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full md:h-85 overflow-hidden rounded-t">
+          <img src="img/rosul.png" alt="publication caption" class="w-full h-full md:h-70 object-cover border-b-0 border object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 text-center pt-10">
+          <h3 class="text-base md:text-2xl font-bold tracking-tight uppercase"> The Difference Between Ar-rasul (Messenger) and An-nabiyy (Prophet)</h3> 
+           <p class="text-sm md:text-lg font-semibold my-6 text-gray-600"> <i class="fas fa-calendar"></i> August, 2022 </p>
+         <p class="text-sm mb-8 md:text-2xl tracking-tight "> Showing on the face of the image attached to this piece is the concise discourse on the difference between  Ar-rosuul and An-nabiyy. In the process of given the definition of Ar-Rosuul...</p>
+         <a href="rosul-and-nabiyy.html" class=""> <p class="text-sm button py-3 md:text-2xl bg-yellow-500 text-white  mb-5 font-semibold">View Details » </p> </a> 
+        </div>
+    </div> 
+     <!-- article two -->
+     <div data-aos=" " class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full md:h-50 overflow-hidden rounded-t">
+          <img src="img/interrogation.jpeg" alt="publication caption" class="w-full border md:h-52 object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 text-center pt-10">
+          <h3 class="text-base md:text-2xl font-bold tracking-tight uppercase"> Arabic Interrogative Words <br> (أدوات الاستفهامية) </h3> 
+           <p class="text-sm my-6 md:text-lg font-semibold text-gray-600"> <i class="fas fa-calendar"></i> ...., 2022 </p>
+         <p class="text-sm mb-8 md:text-2xl tracking-tight ">   Interrogative words (أدوات الاستفهامية), in Arabic parlance, have the combination of two Arabic parts of speech: ism (noun) and Harf (prepositions).  It is thus, commonly known as Interrogative prepositions in English. Some of the Adawaatulis-tif-haamiyyah are...</p>
+         <a href="arabic-interrogative-words.html" class=""> <p class="text-sm button py-3 md:text-2xl bg-yellow-500 text-white  mb-5 font-semibold">View Details » </p> </a> 
+        </div>
+    </div> 
+     <!-- article three-->
+     <div data-aos="   " class="md:grid-span-2 bg-white shadow-lg w-full rounded-lg mb-3">
+        <div class="md:w-full overflow-hidden rounded-t">
+          <img src="img/jumuah.jpeg" alt="publication caption" class="w-full h-full md:h-52 object-cover object-center">
+        </div> 
+        <!--title, abstract & read more-->
+        <div class="px-5 text-center pt-10">
+          <h3 class="text-base md:text-2xl font-bold tracking-tight uppercase"> JUMU`AH PRAYER FOR MUSLIM WOMEN: WHAT YOU SHOULD KNOW </h3> 
+           <p class="text-sm my-6 md:text-lg font-semibold text-gray-600"> <i class="fas fa-calendar"></i> November, 2022 </p>
+         <p class="text-sm mb-8 md:text-2xl tracking-tight "> The question whether attending the Jumu`ah prayer is strictly for all Muslim adherents needs to be addressed. That is, is it obligatory on all Muslims?  As expounded by Imaam An-Nawawiyy and other notable scholars relying on the various prophetic narrations,...</p>
+         <a href="women-and-jumuah.html" class=""> <p class="text-sm button py-3 md:text-2xl bg-yellow-500 text-white  mb-5 font-semibold">View Details » </p> </a> 
+        </div>
+    </div> 
+    
+<!-- important div close-->
+</article>
+<div
+      class="flex mt-24 md:mt-32 justify-center items-center mt-5 px-1 pb-10 animate__animated animate__fadeIn animate__slow animate__delay-5s">
+      <button
+        class="inline-block pulsate-bck text-white font-bold text-center btn  rounded-lg uppercase text-base md:text-4xl md:px-8 md:py-6 px-2.5 py-3 bg-yellow-500 text-lg font-bold bg-gradient-to-br from-yellow-700 to-yellow-500 shadow-lg  ">
+        <a class="text-white" href="publications.html"> Access our Publications <i class="fas fa-angle-double-right font-extrabold text-white text-2xl md:text-5xl"></i> </a> </button>
+    </div>
+    </main>
+    
+    
+    
+
+  <!--contact Segment --> 
+  <main class="" >
+   <section class="relative rounded-lg py-8 px-4 md:px-16 md:py-16 bg-gray-100 text-dark  mx-4 md:mx-28 bottom-sinker mt-0"  >
+     <!--about us-->
+    <div id="about" class="">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-5" > About Us </h1>
+      <p class="text-xs text-justify text-gray-800 md:text-2xl " > Alqosim Islamic Center is an academic, educational and da‘wah website. It aims to offer well-researched Islamic contents on various aspects of Islām —sīrah, fiqh, tawhīd, qur-ān, inclusive of basic Arabic principles— based on evidence from religious texts in a concise and easy-to-digest manner. We also offer platform for virtual Qur-anic recitation gathering. We also engage in sale and delivery of Arabic and Islamic texts accross the nation, Nigeria. </p>
+ <!-- social handles--> 
+    <div class="mt-5  md:mt-12 flex   text-xl  md:text-5xl ">
+      <a href="https://m.facebook.com/muhammadulqoosim.muhiibuddeen" class="text-blue-600 mr-4 hover:text-blue-600" target="_blank" rel="noopener" title="Facebook"> <i class="fab fa-facebook "></i></a>
+      <a href="https://wa.me/2349037074761?text=Hello!" class="text-green-600 hover:text-green-500 mr-4" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i></a>
+        <a href="instagram.com/muhibqosim" class="text-red-600 mr-4 hover:text-pink-600" target="_blank" rel="noopener" title="Instagram"> <i class="fab fa-instagram "></i></a>
+     </div>
+    </div>
+    <!--contact--> 
+    <div class="mt-12">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-5" > Contact Info </h1>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-envelope text-blue-500 pr-2"> </i><a class="" href="al-qosimislamiccenter@gmail.com"> al-qosimislamiccenter@gmail.com </a> </p>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-map-marker-alt text-blue-500 pr-2"> </i> Faculty of Law, Bayero University, Kano, Nigeria.  </p>
+      <p class=" py-3 text-xs md:text-2xl text-gray-800" style="border-bottom: gray 1px solid; border-decoration: ; "> <i class="fas fa-phone text-blue-500 pr-2"> </i> (+234) 9037074761  </p>
+    </div>
+    
+    <!--Quick reach out--> 
+    <div id="contact" class="mt-12">
+      <h1 class="text-2xl font-semibold md:text-6xl md:tracking-wider mb-4" > Quick Contact</h1>
+      <div class="">
+        <form class="py-2.5" id="messageForm">
+          <div class="flex items-center justify-center">
+            <textarea class="text-sm p-2 inline-block text-dark rounded-sm" name="message" id="messageInput"
+              placeholder="your message here " style="height:20vh; width: 90vw; ">  </textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="text-center items-center mt-5 px-4 py-4 Navy-blue text-sm md:text-3xl text-white font-bold shadow-lg inline-block mt-5 Navy-blue bg-gradient-to-br from-blue-900 to-blue-600 rounded-sm"
+              type="submit" style="width: 90vw; ">Submit Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </section>
+    </main>
+  
+  
+  
+  
+  <!--foooter starts here--> 
+  <footer class="Navy-blue pt-96 pb-3 text-white px-4">
+    <div class="md:pt-72">
+      <h1 class="text-2xl md:text-5xl text-center font-semibold mt-20">Join our e-mail list for regular updates, news & publications  </h1>
+    </div>
+    <form action="  " method="  " class=" mt-3 px-4 md:px-20 ">
+       <script async data-uid="ea5c74106c" src="https://muhibqosim.ck.page/ea5c74106c/index.js"></script>
+    </form>
+
+
+
+    <!-- copyright--> 
+    <div class="mt-10 md:mt-20 pt-5 ">
+      <hr class="text-gray-100  ">
+     <!-- <p class="text-xs text-white font-light text-center md:text-3xl">  </p>-->
+      <p class="text-xs text-white mt-6 font-light text-center md:text-3xl"> All Rights Reserved for <a href="https://alqosim.sgm.ng"class="font-semibold  text-red-600">Al-qosim Islamic Center</a> <i class="far fa-copyright md:text-3xl "> </i> 2023 <br> Designed by <a class=" text-red-600 font-semibold" href="https://muhibqosim.github.io/muhibqosim/"> MuhibQosim </a>
+      </p>
+    </div>
+
+</footer>
+
+<!-- JavaScript starts here-->
+  <script src="js/main.js"> </script>
+<!--  <script src="js/jquery.slim.min.js" type="text/javascript" charset="utf-8"></script>-->
+<!-- <script src="js/bootstrap.js">
+  </script>-->
+</body>
+</html>
+  
+ 
