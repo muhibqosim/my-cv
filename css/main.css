@@ -1,3 +1,4 @@
+
 body, .geologica{
   font-family: "Geologica", sans-serif ;
   vw: 100%;
@@ -15,16 +16,16 @@ h1, h2, h3, h4, h5, .garamond {
 
 
  @media (max-width:699px) {
-          /*.logo{
-            width: 25vw;
-            height: 30vh;
+         /* .logo{
+            width: 40% ;
+            height: 70%;
           }*/
     }
 
     @media (min-width:700px) {
-         /* .logo{
-            width: 55% ;
-            height: 55%;
+        /*  .logo{
+            width: 80% ;
+            height: 110%;
           }*/
           .line-height{
         line-height: 88px;
