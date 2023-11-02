@@ -16,15 +16,15 @@ h1, h2, h3, h4, h5, .garamond {
 
  @media (max-width:699px) {
           .logo{
-            width: 50% ;
-            height: 80%;
+            width: 45% ;
+            height: 55%;
           }
     }
 
     @media (min-width:700px) {
           .logo{
-            width: 80% ;
-            height: 110%;
+            width: 55% ;
+            height: 55%;
           }
           .line-height{
         line-height: 88px;
