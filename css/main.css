@@ -15,10 +15,10 @@ h1, h2, h3, h4, h5, .garamond {
 
 
  @media (max-width:699px) {
-          .logo{
+          /*.logo{
             width: 100% ;
             height: 95%;
-          }
+          }*/
     }
 
     @media (min-width:700px) {
